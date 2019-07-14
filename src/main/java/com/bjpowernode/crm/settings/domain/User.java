@@ -15,6 +15,25 @@ public class User {
     private String editTime;//enittime修改时间 yyyy-MM-dd HH:mm:ss 19位
     private String editBy; //editby修改人
 
+    @Override
+    public String toString() {
+        return "User{" +
+                "id='" + id + '\'' +
+                ", loginAct='" + loginAct + '\'' +
+                ", name='" + name + '\'' +
+                ", loginPwd='" + loginPwd + '\'' +
+                ", email='" + email + '\'' +
+                ", expireTime='" + expireTime + '\'' +
+                ", lockState='" + lockState + '\'' +
+                ", deptno='" + deptno + '\'' +
+                ", allowIps='" + allowIps + '\'' +
+                ", createTime='" + createTime + '\'' +
+                ", createBy='" + createBy + '\'' +
+                ", editTime='" + editTime + '\'' +
+                ", editBy='" + editBy + '\'' +
+                '}';
+    }
+
     public String getId() {
         return id;
     }
